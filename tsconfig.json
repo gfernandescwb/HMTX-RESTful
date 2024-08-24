@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@Config/*": ["config/*"],
+      "@Controllers/*": ["controllers/*"],
+      "@Dependencies/*": ["dependencies/*"],
+      "@DTOs/*": ["dtos/*"],
+      "@Interfaces/*": ["interfaces/*"],
+      "@Middlewares/*": ["middlewares/*"],
+      "@Routes/*": ["routes/*"],
+      "@Views/*": ["views/*"],
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+}
